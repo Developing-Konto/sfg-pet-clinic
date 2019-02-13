@@ -8,6 +8,12 @@ public class SfgPetClinicApplication {
 
    public static void main(String[] args) {
       SpringApplication.run(SfgPetClinicApplication.class, args);
+      String temp = "klsoppa";
+
+
+      if (false){
+         System.out.println("Klopppasas");
+      }
    }
 
 }
