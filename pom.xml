@@ -36,7 +36,7 @@
                 <configuration>
                     <localCheckout>true</localCheckout>
                     <!--<pushChanges>false</pushChanges>-->
-                    <!--<goals>deploy</goals>-->
+                    <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
