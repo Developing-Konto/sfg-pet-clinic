@@ -1,7 +1,7 @@
 package com.butcheer.sfgpetclinic.services.map;
 
 import com.butcheer.sfgpetclinic.model.Pet;
-import com.butcheer.sfgpetclinic.services.CrudService;
+import com.butcheer.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by Butcheer on 2019-03-01 14:25
  */
 public class PetServiceMap extends AbstractMapService<Pet, Long>
-   implements CrudService<Pet, Long> {
+   implements PetService {
    @Override
    public Set<Pet> findAll() {
       return super.findAll();

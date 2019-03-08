@@ -14,4 +14,12 @@ public class IndexController {
 
       return "index";
    }
+
+
+   public String getSimpleUser(){
+
+
+
+      return "";
+   }
 }

@@ -2,6 +2,7 @@ package com.butcheer.sfgpetclinic.services.map;
 
 import com.butcheer.sfgpetclinic.model.Owner;
 import com.butcheer.sfgpetclinic.services.CrudService;
+import com.butcheer.sfgpetclinic.services.OwnerService;
 
 import java.util.Set;
 
@@ -9,7 +10,7 @@ import java.util.Set;
  * Created by Butcheer on 2019-03-01 14:17
  */
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>
-   implements CrudService<Owner, Long> {
+   implements OwnerService  {
    @Override
    public Set<Owner> findAll() {
       return super.findAll();
@@ -33,5 +34,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long>
    @Override
    public Owner findById(Long id) {
       return super.findById(id);
+   }
+
+   @Override
+   public Owner findByLastName(String lastName) {
+      return null;
    }
 }
