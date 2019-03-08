@@ -2,12 +2,14 @@ package com.butcheer.sfgpetclinic.services.map;
 
 import com.butcheer.sfgpetclinic.model.Pet;
 import com.butcheer.sfgpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by Butcheer on 2019-03-01 14:25
  */
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long>
    implements PetService {
    @Override

@@ -3,12 +3,14 @@ package com.butcheer.sfgpetclinic.services.map;
 import com.butcheer.sfgpetclinic.model.Vet;
 import com.butcheer.sfgpetclinic.services.CrudService;
 import com.butcheer.sfgpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by Butcheer on 2019-03-01 14:25
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long>
    implements VetService {
    @Override
