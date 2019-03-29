@@ -22,4 +22,11 @@ public class IndexController {
 
       return "";
    }
+
+
+
+   @RequestMapping("/oups")
+   public String oupsHandler() {
+      return "notimplemented";
+   }
 }
