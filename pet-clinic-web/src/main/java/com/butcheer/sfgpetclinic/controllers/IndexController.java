@@ -16,13 +16,9 @@ public class IndexController {
    }
 
 
-   public String getSimpleUser(){
-
-
-
+   public String getSimpleUser() {
       return "";
    }
-
 
 
    @RequestMapping("/oups")
