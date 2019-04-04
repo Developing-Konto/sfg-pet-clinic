@@ -1,15 +1,29 @@
 package com.butcheer.sfgpetclinic.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
  * Created by Butcheer on 2019-02-13 14:49
  */
+@Entity
+@Table(name = "pets")
 public class Pet extends BaseEntity {
-   private LocalDate birthDate;
-   private PetType petType;
-   private Owner owner;
+
+   @Column(name = "name")
    private String name;
+
+   @Column(name = "birth_date")
+   private LocalDate birthDate;
+
+   @ManyToOne
+   @JoinColumn(name="owner_id")
+   private Owner owner;
+
+   @ManyToOne
+   @JoinColumn(name="type_id")
+   private PetType petType;
+
 
    public String getName() {
       return name;
